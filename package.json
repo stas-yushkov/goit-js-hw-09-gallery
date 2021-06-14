@@ -1,0 +1,31 @@
+{
+  "name": "goit-js-hw-09-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "qwe": "node app.js",
+    "preqwe": "echo \"run app.js\"",
+    "postqwe": "echo \"app.js done\"",
+    "script-1": "echo \"script-1\"",
+    "script-2": "echo \"script-2\"",
+    "all": "npm run script-1 && npm run script-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stas-yushkov/goit-js-hw-09-gallery.git"
+  },
+  "author": "Stas YUshkov <stas.yushkov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stas-yushkov/goit-js-hw-09-gallery/issues"
+  },
+  "homepage": "https://github.com/stas-yushkov/goit-js-hw-09-gallery#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "shortid": "^2.2.16"
+  }
+}
