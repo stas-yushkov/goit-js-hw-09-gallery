@@ -1,3 +1,1 @@
-import validatePassword from './js/validate-password';
-console.log(validatePassword);
-//
+import './sass/main.scss';

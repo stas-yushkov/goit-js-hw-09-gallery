@@ -1,12 +1,7 @@
-.vscode
-.idea
-.DC_Store
-node_modules
-.env
-build/
-*.psd
-
-
+#Junk
+.DS_Store
+.vscode/
+.idea/
 
 # Logs
 logs
