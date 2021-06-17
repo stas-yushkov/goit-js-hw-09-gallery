@@ -2,6 +2,7 @@ import './sass/main.scss';
 
 import { galleryItems } from './js/app';
 // console.dir(data.galleryItems);
+import { galleryItemsMarkup } from './js/gallery-items-markup';
 
 const galleryRef = document.querySelector('.js-gallery');
 const lightboxRef = document.querySelector('.js-lightbox');
@@ -11,30 +12,6 @@ const closeLightboxBtn = document.querySelector(
   'button[data-action="close-lightbox"]',
 );
 let currentImageIndex = 0;
-
-// Создание и рендер разметки по массиву данных galleryItems из app.js и предоставленному шаблону.
-const galleryItemsMarkup = galleryItems
-  .map(({ preview, original, description }, index) => {
-    //
-    return `
-  <li class="gallery__item">
-    <a
-      class="gallery__link"
-      href="${original}"
-    >
-      <img
-      class="gallery__image"
-      src="${preview}"
-      data-source="${original}"
-      data-index="${index}"
-      alt="${description}"
-    />
-  </a>
-</li>
-`;
-  })
-  .join('');
-// callbackfn: (value: { preview: string; original: string; description: string; }, index: number, array: { preview: string; original: string; description: string; }[]) => any, thisArg?: any): any[]
 
 galleryRef.insertAdjacentHTML('beforeend', galleryItemsMarkup);
 
