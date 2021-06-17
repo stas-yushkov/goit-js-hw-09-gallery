@@ -99,9 +99,12 @@ function onArrowBtnKeydown(e) {
     }
   }
   const newOriginalImageSrc = galleryItems[currentImageIndex].original;
+  const newImageDescr = galleryItems[currentImageIndex].description;
   lightbox__imageRef.src = newOriginalImageSrc;
+  lightbox__imageRef.alt = newImageDescr;
   // console.log('🚀 ~ onArrowBtnKeydown ~ currentImageIndex', currentImageIndex);
 }
+
 // let currentImageIndex = 0;
 // console.log(e);
 // console.log(e.target);
